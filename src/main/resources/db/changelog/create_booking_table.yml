@@ -1,0 +1,54 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_booking_table
+      author: denny.afrizal713@gmail.com
+      changes:
+        - createTable:
+            tableName: booking
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: concert_id
+                  type: UUID
+                  constraints:
+                    nullable: false
+              - column:
+                  name: booking_date
+                  type: DATETIME
+                  constraints:
+                    nullable: false
+              - column:
+                  name: booking_qty
+                  type: NUMERIC
+                  constraints:
+                    nullable: false
+              - column:
+                  name: is_active
+                  type: BOOLEAN
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_by
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_date
+                  type: DATETIME
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_by
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_date
+                  type: DATETIME
+                  constraints:
+                    nullable: false

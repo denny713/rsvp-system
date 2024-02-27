@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: changelog/create_concert_table.yml
+      relativeToChangelogFile: true
+  - include:
+      file: changelog/create_booking_table.yml
+      relativeToChangelogFile: true
