@@ -22,7 +22,6 @@ import java.util.List;
 @ControllerAdvice
 public class ResponseHandler {
 
-    public static final String UNAUTHORIZED = "UNAUTHORIZED";
     private static final String INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR";
     private static final String ERR_VALIDATION = "ERR_VALIDATION";
     private static final String BAD_REQUEST = "BAD_REQUEST";
